@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingProvider";
+import { initialFX } from "./utils/initialFX";
 
 import Marquee from "react-fast-marquee";
 
@@ -23,6 +24,7 @@ const Loading = ({ percent }: { percent: number }) => {
     if (isLoaded) {
       setClicked(true);
       setTimeout(() => {
+        initialFX();
         setIsLoading(false);
       }, 900);
     }
