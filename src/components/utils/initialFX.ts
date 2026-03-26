@@ -1,8 +1,15 @@
 import { SplitText } from "gsap/SplitText";
 import gsap from "gsap";
+import { smoother } from "../Navbar";
+
 export function initialFX() {
-  document.body.style.overflowY = "auto";
-  document.getElementsByTagName("main")[0].classList.add("main-active");
+  Promise.all([
+    document.fonts.load("12px Geist"),
+    document.fonts.ready
+  ]).then(() => {
+    document.body.style.overflowY = "auto";
+    if (smoother) smoother.paused(false);
+    document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", {
     backgroundColor: "#0b080c",
     duration: 0.5,
@@ -75,6 +82,7 @@ export function initialFX() {
 
   LoopText(landingText2, landingText3);
   LoopText(landingText4, landingText5);
+  });
 }
 
 function LoopText(Text1: SplitText, Text2: SplitText) {
