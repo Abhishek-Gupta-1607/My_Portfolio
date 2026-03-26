@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import "./styles/Loading.css";
 import { useLoading } from "../context/LoadingProvider";
-import { initialFX } from "./utils/initialFX";
 
 import Marquee from "react-fast-marquee";
 
@@ -21,13 +20,17 @@ const Loading = ({ percent }: { percent: number }) => {
   }
 
   useEffect(() => {
-    if (isLoaded) {
-      setClicked(true);
-      setTimeout(() => {
-        initialFX();
-        setIsLoading(false);
-      }, 900);
-    }
+    import("./utils/initialFX").then((module) => {
+      if (isLoaded) {
+        setClicked(true);
+        setTimeout(() => {
+          if (module.initialFX) {
+            module.initialFX();
+          }
+          setIsLoading(false);
+        }, 900);
+      }
+    });
   }, [isLoaded]);
 
   function handleMouseMove(e: React.MouseEvent<HTMLElement>) {
