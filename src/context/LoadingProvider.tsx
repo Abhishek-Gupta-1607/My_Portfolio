@@ -5,7 +5,7 @@ import {
   useEffect,
   useState,
 } from "react";
-import Loading from "../components/Loading";
+import Loading, { setProgress } from "../components/Loading";
 
 interface LoadingType {
   isLoading: boolean;
@@ -24,7 +24,11 @@ export const LoadingProvider = ({ children }: PropsWithChildren) => {
     setIsLoading,
     setLoading,
   };
-  useEffect(() => {}, [loading]);
+  useEffect(() => {
+    const { loaded, clear } = setProgress(setLoading);
+    loaded();
+    return () => clear();
+  }, []);
 
   return (
     <LoadingContext.Provider value={value as LoadingType}>
