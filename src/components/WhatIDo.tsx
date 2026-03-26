@@ -87,11 +87,12 @@ const WhatIDo = () => {
               <h3>Machine Learning</h3>
               <h4>Description</h4>
               <p>
-              Machine Learning is a branch of Artificial Intelligence that enables systems to learn from data, identify patterns,
-              and make predictions or decisions without explicit programming, improving performance over time.
+                Machine Learning is a branch of Artificial Intelligence that enables systems to learn from data, identify patterns,
+                and make predictions or decisions without explicit programming, improving performance over time.
               </p>
               <h5>Skills & tools</h5>
               <div className="what-content-flex">
+                <div className="what-tags">Matplotlib</div>
                 <div className="what-tags">Scikit-learn</div>
                 <div className="what-tags">TensorFlow</div>
                 <div className="what-tags">Pandas</div>
@@ -122,8 +123,8 @@ const WhatIDo = () => {
               <h3>DevOps</h3>
               <h4>Description</h4>
               <p>
-              DevOps is a practice combining development and operations to automate workflows, improve collaboration,
-              and enable faster, reliable software delivery and deployment.
+                DevOps is a practice combining development and operations to automate workflows, improve collaboration,
+                and enable faster, reliable software delivery and deployment.
               </p>
               <h5>Skills & tools</h5>
               <div className="what-content-flex">
