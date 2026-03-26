@@ -76,7 +76,7 @@ const Work = () => {
                 title: "AI Assessment of Wire Rod",
                 category: "Web Application",
                 tools: "Python, HTML, CSS, JS, Flask",
-                image: "/images/Aluminium.jpg",
+                image: "/images/aluminium.jpg",
                 link: "https://github.com/Abhishek-Gupta-1607/Aluminium-Wire-Rod-prediction",
               },
               {
