@@ -3,12 +3,8 @@ import gsap from "gsap";
 import { smoother } from "../Navbar";
 
 export function initialFX() {
-  Promise.all([
-    document.fonts.load("12px Geist"),
-    document.fonts.ready
-  ]).then(() => {
-    document.body.style.overflowY = "auto";
-    if (smoother) smoother.paused(false);
+  document.body.style.overflowY = "auto";
+  if (smoother) smoother.paused(false);
     document.getElementsByTagName("main")[0].classList.add("main-active");
   gsap.to("body", {
     backgroundColor: "#0b080c",
@@ -82,7 +78,6 @@ export function initialFX() {
 
   LoopText(landingText2, landingText3);
   LoopText(landingText4, landingText5);
-  });
 }
 
 function LoopText(Text1: SplitText, Text2: SplitText) {
