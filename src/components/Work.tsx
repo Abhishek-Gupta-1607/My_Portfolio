@@ -70,14 +70,14 @@ const Work = () => {
                 category: "AI Agent & Semantic Search",
                 tools: "Python, LangGraph, FastAPI, Streamlit, FAISS, OpenAI, Docker",
                 image: "/images/placeholder.webp",
-                link: "https://github.com/Abhishek-Gupta-1607",
+                link: "https://github.com/Abhishek-Gupta-1607/hackathon2026_AbhishekGupta.git",
               },
               {
                 title: "AI-Assisted Autonomous CI/CD Orchestration",
                 category: "Full-Stack Orchestration Platform",
                 tools: "Java, Spring Boot, Python, Flask, Jenkins, Docker, AWS EC2, MySQL, Nginx",
                 image: "/images/placeholder.webp",
-                link: "https://github.com/Abhishek-Gupta-1607",
+                link: "https://github.com/Abhishek-Gupta-1607/AI-Assisted-Autonomous-CI-CD-and-Self-Healing-Container-Orchestration-System.git",
               },
               {
                 title: "Product Purchase Predictor",

@@ -22,7 +22,7 @@ const Education = () => {
               <h3>NOW</h3>
             </div>
             <p>
-              Bachelor of Technology in Computer Science and Engineering. Current CGPA: 7.59.
+              Bachelor of Technology in Computer Science and Engineering. Current CGPA: 7.57.
             </p>
           </div>
 
@@ -48,7 +48,7 @@ const Education = () => {
               <h3>2020</h3>
             </div>
             <p>
-              Graduated 10th grade foundation with a final percentage of 75.5%.
+              Graduated 10th grade foundation with a final percentage of 75.2%.
             </p>
           </div>
         </div>
