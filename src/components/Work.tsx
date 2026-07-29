@@ -66,6 +66,13 @@ const Work = () => {
           <div className="work-flex">
             {[
               {
+                title: "AI Autonomous Support Agent",
+                category: "AI Agent & Semantic Search",
+                tools: "Python, LangGraph, FastAPI, Streamlit, FAISS, OpenAI, Docker",
+                image: "/images/placeholder.webp",
+                link: "https://github.com/Abhishek-Gupta-1607",
+              },
+              {
                 title: "AI-Assisted Autonomous CI/CD Orchestration",
                 category: "Full-Stack Orchestration Platform",
                 tools: "Java, Spring Boot, Python, Flask, Jenkins, Docker, AWS EC2, MySQL, Nginx",
